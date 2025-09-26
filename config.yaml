@@ -1,0 +1,45 @@
+solana:
+  rpc_url: "${SOLANA_RPC_URL:-https://api.mainnet-beta.solana.com}"
+  commitment: "confirmed"
+  timeout_seconds: 20
+
+market:
+  prefer: "dexscreener"
+  dexscreener_base: "https://api.dexscreener.com/latest/dex/tokens"
+
+solscan:
+  enabled: true
+  base_url: "https://api.solscan.io"
+  api_key: "${SOLSCAN_API_KEY:-}"
+
+github:
+  enabled: true
+  token: "${GITHUB_TOKEN:-}"
+
+developer:
+  enabled: true
+
+bitquery:
+  enabled: true
+  endpoint: "https://streaming.bitquery.io/graphql"
+  api_key: "${BITQUERY_API_KEY:-}"
+
+moralis:
+  enabled: true
+  base_url: "https://solana-gateway.moralis.io"
+  api_key: "${MORALIS_API_KEY:-}"
+
+telegram:
+  enabled: true
+  bot_token: "${TELEGRAM_BOT_TOKEN:-}"
+  chat_id: "${TELEGRAM_CHAT_ID:-}"
+
+report:
+  output_dir: "reports"
+  include_json: true
+  include_markdown: true
+
+scrape:
+  enable_x: true
+  enable_telegram: false
+  enable_discord: false

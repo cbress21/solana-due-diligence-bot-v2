@@ -5,6 +5,7 @@ A comprehensive due diligence analysis system for Solana meme coins and tokens. 
 ## Features
 
 ### 🔍 **Comprehensive Analysis**
+
 - **Tokenomics**: Supply analysis, holder distribution, token metadata
 - **Market Data**: Liquidity analysis, trading pairs, price information
 - **Security**: Authority checks, honeypot detection, LP analysis
@@ -13,12 +14,14 @@ A comprehensive due diligence analysis system for Solana meme coins and tokens. 
 - **Metrics**: Holder concentration analysis, risk assessment
 
 ### 🚀 **Real-time Monitoring**
+
 - Live token streaming via Bitquery
 - Automatic analysis of new tokens
 - Buy signal evaluation with configurable thresholds
 - Telegram notifications for promising tokens
 
 ### 📊 **Detailed Reporting**
+
 - JSON and Markdown report generation
 - Comprehensive risk assessment
 - Historical analysis capabilities
@@ -56,21 +59,25 @@ SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
 ### 3. Basic Usage
 
 #### Analyze a Single Token
+
 ```bash
 python main.py run <MINT_ADDRESS>
 ```
 
 #### Start Live Streaming
+
 ```bash
 python stream_control.py start
 ```
 
 #### Check Stream Status
+
 ```bash
 python stream_control.py status
 ```
 
 #### Stop Streaming
+
 ```bash
 python stream_control.py stop
 ```
@@ -96,7 +103,7 @@ The bot evaluates tokens based on:
 
 ## Project Structure
 
-```
+```text
 due_diligence_project_v2/
 ├── main.py                          # Main entry point
 ├── stream_control.py                # Stream management wrapper
@@ -129,11 +136,13 @@ due_diligence_project_v2/
 ## API Integrations
 
 ### Required Services
+
 - **Solscan**: Token metadata and holder information
 - **GitHub**: Repository discovery and analysis
 - **Telegram**: Buy signal notifications
 
 ### Optional Services
+
 - **Bitquery**: Live token streaming
 - **Moralis**: Advanced holder analysis
 - **Custom RPC**: Enhanced Solana data access
@@ -141,17 +150,20 @@ due_diligence_project_v2/
 ## Development
 
 ### Running Tests
+
 ```bash
 pytest tests/
 ```
 
 ### Adding New Analyzers
+
 1. Create analyzer class in appropriate module
 2. Implement `analyze()` method
 3. Add to main analysis pipeline in `main.py`
 4. Update report generation in `reporting/report.py`
 
 ### Customizing Buy Signals
+
 Modify `signals/engine.py` to adjust evaluation criteria and thresholds.
 
 ## Troubleshooting

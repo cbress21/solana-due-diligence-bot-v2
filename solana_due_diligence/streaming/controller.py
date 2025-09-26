@@ -13,7 +13,7 @@ from rich.console import Console
 
 from solana_due_diligence.config import load_config
 from solana_due_diligence.ingestion.bitquery_stream import BitqueryStream
-from solana_due_diligence.main import analyze_once
+from solana_due_diligence.analysis import analyze_once
 
 
 class StreamController:
